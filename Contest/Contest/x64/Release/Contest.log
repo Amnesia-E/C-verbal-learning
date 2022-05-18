@@ -1,0 +1,10 @@
+﻿  contact.c
+D:\C语言\Contest\Contest\contact.c(10,11): warning C4098: “Initcontact”:“void”函数返回值
+D:\C语言\Contest\Contest\contact.c(74,40): warning C4028: 形参 1 与声明不同
+D:\C语言\Contest\Contest\contact.c(86,11): warning C4477: “printf”: 格式字符串“%-2s”需要类型“char *”的参数，但可变参数 2 拥有了类型“int”
+D:\C语言\Contest\Contest\contact.c(86,11): warning C4313: "printf": 格式字符串中的 "%s" 与类型为 "int" 的参数 2 冲突
+D:\C语言\Contest\Contest\contact.c(92,3): error C2143: 语法错误: 缺少“;”(在“}”的前面)
+D:\C语言\Contest\Contest\contact.c(130,14): warning C4047: “==”:“Contact *”与“int”的间接级别不同
+D:\C语言\Contest\Contest\contact.c(137,10): warning C4477: “printf”: 格式字符串“%-2s”需要类型“char *”的参数，但可变参数 2 拥有了类型“int”
+D:\C语言\Contest\Contest\contact.c(137,10): warning C4313: "printf": 格式字符串中的 "%s" 与类型为 "int" 的参数 2 冲突
+  test.c
