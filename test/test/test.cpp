@@ -1,45 +1,45 @@
 #define _CRT_SECURE_NO_WARNINGS 1
 #include"game.h"
-void menu()//×¼±¸²¿·Ö
+void menu()//å‡†å¤‡éƒ¨åˆ†
 {
 	printf("**********************\n");
 	printf("*****1.play 0.exit ***\n");
 	printf("**********************\n");
 }
-void game()//¼üÅÌ×é×°
+void game()//é”®ç›˜ç»„è£…
 {   
 	char ret = 0;
 	char board[ROW][COL] = { 0 };
 	Initboard(board, ROW, COL);
 	Displayboar(board, ROW, COL);
-	while (1)//ÓÎÏ·ÔËĞĞ²¿·Ö
+	while (1)//æ¸¸æˆè¿è¡Œéƒ¨åˆ†
 	{
 		Playermove(board, ROW, COL);
 		Displayboar(board, ROW, COL);
 		ret = Iswin(board, ROW, COL);
-		if (ret != 'c')
+		if (ret != 'C')
 		{
 			break;
 		}
 		Computermove(board, ROW, COL);
 		Displayboar(board, ROW, COL);
 		ret = Iswin(board, ROW, COL);
-		if (ret != 'c')
+		if (ret != 'C')
 		{
 			break;
 		}
 	}
 	if (ret == '*')
 	{
-		printf("Íæ¼ÒÓ®\n");
+		printf("ç©å®¶èµ¢\n");
 	}
 	else if (ret == '#')
 	{
-		printf("µçÄÔÓ®\n");
+		printf("ç”µè„‘èµ¢\n");
 	}
 	else
 	{
-		printf("Æ½¾Ö\n");
+		printf("å¹³å±€\n");
 	}
 }
 int main()
@@ -49,19 +49,19 @@ int main()
 	do
 	{
 		menu();
-		printf("ÇëÑ¡Ôñ>--");
+		printf("è¯·é€‰æ‹©>--");
 		scanf("%d", &input);
 		switch (input)
 		{
 		case 1:
 			game();
-			printf("Èı×ÓÆå\n");
+			printf("ä¸‰å­æ£‹\n");
 			break;
 		case 0:
-			printf("ÍË³öÓÎÏ·...exit...\n");
+			printf("é€€å‡ºæ¸¸æˆ...exit...\n");
 			break;
 		default:
-			printf("ÊäÈë´íÎó£¬ÇëÖØĞÂÊäÈë£¡\n");
+			printf("è¾“å…¥é”™è¯¯ï¼Œè¯·é‡æ–°è¾“å…¥ï¼\n");
 		}
 	} while (input);
 	return 0;
