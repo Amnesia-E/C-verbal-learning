@@ -12,7 +12,7 @@ int main()
 	for (i = 0; i < n; i++)
 	{
 		ret =ret * 10 + a;
-		sun = ret;
+		sun += ret;
 	}
 	printf("%d", sun);
 
